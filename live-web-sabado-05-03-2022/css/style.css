@@ -1,0 +1,233 @@
+/* importando fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+/* o asterisco representa todos os elementos html - todos usarão a mesma formatação */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* regras genericas */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* header da pagina */
+.header-top{
+  width: 100%; /*para as DIVs o padrão de comprimento já é de 100%*/
+  height: 80px; /*p0de setar o valor de auto que o contaienr se adaptar*/
+  color: #fff;
+  /* background-color: #000; */
+  display: flex; /*ao setar a flag flex, deve ser enquadrado a class pai*/
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-nav ul{
+  display: flex;
+}
+
+.header-nav li{
+  margin: 0 10px;
+}
+
+.header-nav a{
+  font-weight: 700;
+  font-size: 14px;
+  transition: 500ms;
+}
+
+.header-nav a:hover{
+  color: #e21844;
+}
+
+.scroll-active{
+  background-color: rgba(0, 0, 0, 0.415);
+}
+/* fim header da pagina */
+
+/* inicio hero */
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0)),
+  url(../images/pexels-felix-mittermeier-957002.jpg);
+  background-repeat: cover; /*cobre toda a página independente do tamanho da tela*/
+  background-position: 50%; /*posiciona imagem no meio*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.hero-title{
+  margin-bottom: 20px;
+  font-size: 8vmin;
+  text-align: center;
+}
+
+.hero-text{
+  margin-bottom: 20px;
+  font-size: 5vmin;
+}
+
+.hero-link{
+  font-size: 3vmin;
+  border: 1px solid #e21844;
+  padding: 12px 30px;
+  border-radius: 70px;
+  background-color: #e21844;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+.hero-link:hover{
+  background-color: transparent;
+}
+/* fim hero */
+
+/* inicio tour */
+.tour{
+  width: 80%;
+  margin: 20px auto;
+  padding: 80px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tour-title{
+  font-size: 6vmin;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.line{
+  width: 150px;
+  height: 4px;
+  background-color: #e21844;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.tour-list{
+  width: 100%;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.tour-list-item{
+  width: 40%;
+}
+
+.tour-list-item h3{
+  font-size: 4vmin;
+  margin-top: 20px;
+}
+
+.tour-list-item p{
+  font-size: 3vmin;
+  margin: 10px 0 40px;
+}
+
+.btn{
+  border: 1px solid #e21844;
+  padding: 12px 40px;
+  border-radius: 30px;
+  background-color: #e21844;
+  font-size: 2.5vmin;
+  font-weight: 700;
+  transition: .5s;
+}
+
+.btn:hover{
+  background-color: transparent;
+  color: #e21844;
+}
+
+.tour-image{
+  width: 100%;
+  transition: .5s ease;
+}
+
+.tour-image:hover{
+  transform: scale(1.2)
+}
+
+/* fim tour */
+
+/* inicio explore */
+.explore{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,0)),
+  url(../images/pexels-kleber-m-ortiz-4028995.jpg);
+  background-repeat: cover; /*cobre toda a página independente do tamanho da tela*/
+  background-position: 50%; /*posiciona imagem no meio*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #fff;
+  padding-left: 30px;
+}
+
+.explore h3{
+  font-size: 6vmin;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.explore-line{
+  width: 50%;
+  height: 4px;
+  background-color: #e21844;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.explore p{
+  width: 50%;
+  font-size: 2.5vmin;
+}
+
+.explore-btn{
+  margin-top: 30px;
+  border: 1px solid #e21844;
+  padding: 12px 40px;
+  border-radius: 30px;
+  background-color: #e21844;
+  font-size: 2.5vmin;
+  font-weight: 700;
+  transition: .5s;
+}
+
+.explore-btn:hover{
+  background-color: transparent;
+  color: #e21844;
+}
+
+
+/* fim explore */
